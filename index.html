@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый Уровень | Авторские онлайн-курсы по реконструкции волос</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <svg style="display: none;">
+        <symbol id="icon-tg" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.284.264-.456.425-.498.468-.14.148-.281.295-.421.439-.232.238-.403.413-.015.688.188.134.42.31.65.485.23.175.461.35.704.524.249.178.473.344.756.56.24.186.464.382.682.576.223.197.416.405.642.383.125-.012.253-.139.317-.463.32-1.636 1.05-5.385 1.196-7.14.015-.178-.008-.344-.069-.427-.06-.084-.176-.118-.325-.102-.335.035-1.442.42-3.83 1.393z"/>
+        </symbol>
+        <symbol id="icon-vk" viewBox="0 0 24 24">
+            <path d="M23.1 5.3c.2-.5 0-.9-.8-.9h-2.6c-.7 0-1 .3-1.1.7 0 0-1.3 3.2-3.2 5.4-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.7V5.3c0-.7-.2-.9-.7-.9H9.4c-.4 0-.6.3-.6.6 0 .6.9.7 1 2.4v3.6c0 .8-.2 1-.5 1-.9 0-3.2-3.2-4.5-6.9-.3-.7-.5-1-1.2-1H1.1c-.8 0-1 .4-1 .7 0 .7.9 3.9 4 8.4 2.1 3 5.1 4.7 7.8 4.7 1.6 0 1.8-.4 1.8-1v-2.3c0-.7.2-.9.7-.9.4 0 1.1.2 2.8 1.8 1.9 1.9 2.2 2.7 3.3 2.7h2.6c.8 0 1.2-.4 1-.1-.2-.8-1.2-1.9-2.3-3.1-1.1-1-2.6-2.2-3-2.7-.5-.6-.3-.9 0-1.4.1 0 3.4-4.7 3.5-5.8z"/>
+        </symbol>
+        <symbol id="icon-inst" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+        </symbol>
+        <symbol id="icon-phone" viewBox="0 0 24 24">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </symbol>
+    </svg>
+    <nav class="navbar">
+        <div class="container navbar__inner">
+            <div class="navbar__logo">Новый <span>Уровень</span></div>
+            <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar__menu" id="navMenu">
+                <li><a href="#teacher">О преподавателе</a></li>
+                <li><a href="#course">О курсе</a></li>
+                <li><a href="#why-us">Почему мы</a></li>
+                <li><a href="#program">Программа</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero has-video-bg">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="img/prem-bg-1.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Волосы: перезагрузка<br><span style="font-size: 0.6em; text-transform: none; font-weight: 500;">Обучение реконструкции волос</span></h1>
+                <p class="hero__subtitle">Освойте топовые техники восстановления волос, станьте востребованным экспертом и выйдите на новый уровень дохода.</p>
+                <div class="hero__actions">
+                    <a href="https://t.me/territoryvolos" class="btn btn--primary" target="_blank">
+                        <svg class="icon"><use href="#icon-tg"></use></svg>Telegram
+                    </a>
+                    <a href="https://max.ru/join/MhPqv-kPqTF3zitQ_peglzhfv23O8QMD6uD534wq9Zk" class="btn btn--outline" target="_blank">
+                        <img src="img/MAX_logo.png" alt="MAX" class="icon" style="object-fit: contain;">MAX
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="teacher" class="about-teacher">
+        <div class="container about-teacher__inner">
+            <div class="about-teacher__photo fade-up-element">
+                <img src="img/foto.webp" alt="Каратаева Эвелина">
+            </div>
+            <div class="about-teacher__content fade-up-element stagger-2">
+                <h2 class="section-title teacher-title">Каратаева Эвелина</h2>
+                <div class="teacher-text">
+                    <p><strong>Ваш эксперт: топ-мастер, технолог-преподаватель по реконструкции волос.</strong></p>
+                    <ul class="teacher-bullets">
+                        <li>Практикующий технолог с многолетним стажем. Ежедневно работаю руками, чтобы давать максимально качественный результат. С 2022г года хозяйка действующей успешной студии реконструкции волос «Новый уровень» в г.Краснодар. Победитель марафона по кератину 2024г.</li>
+                        <li>Сертифицированный преподаватель. Имею два гос диплома и более тридцати повышений квалификации. Обучила десятки мастеров, которые успешно работают без «страха спалить» и пустых трат.</li>
+                        <li>Обучаю высокой скорости работы без потери качества. Собрала воедино химию процессов и реальные потребности волос, убрав из работы «коммерческий мусор».</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="course" class="about-course">
+        <div class="container">
+            <h2 class="section-title text-center fade-up-element">О курсе</h2>
+            <div class="about-course__content fade-up-element stagger-2">
+                <p>Вы получите не просто теорию, а точную пошаговую инструкцию. Как работать правильно, честно и без потерь выйти на стабильный высокий доход.</p>
+                <p>🎓 <strong>Формат:</strong> Онлайн. Учитесь из любой точки мира.</p>
+                <div class="course-intro-text">
+                    <p>Начинаете с нуля и хотите понять всю суть реконструкции?</p>
+                    <p>Практикуете, но устали от противоречивой информации и «секретных» составов, которые нужно выдерживать часами?</p>
+                    <p><strong>Приглашаю на онлайн-курс, где я рассказываю всю правду о бьюти-индустрии. Объясню без «воды»:</strong></p>
+                </div>
+                <ul class="course-bullets">
+                    <li>Правда о кератине: лечение или временная укладка?</li>
+                    <li>Нужны ли бессульфатные шампуни после процедуры.</li>
+                    <li>Нанопластика: развенчиваем миф о «противопоказаниях» к типу волос.</li>
+                    <li>Чек-лист рабочих процедур vs маркетинговый мусор.</li>
+                    <li>Как выполнять горячую реконструкцию за 2:30?</li>
+                    <li>И массу необходимых в работе нюансов.</li>
+                </ul>
+                <p><em>Только проверенные техники и протоколы процедур, которые работают и действительно дают результат.</em></p>
+                <a href="https://t.me/territoryvolos" class="btn btn--primary course-btn" target="_blank">
+                    <svg class="icon"><use href="#icon-tg"></use></svg>Ссылка на курс
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="why-us" class="target-audience">
+        <div class="container">
+            <h2 class="section-title text-center fade-up-element">Почему именно реконструкция волос?</h2>
+            <div class="audience-grid">
+                <div class="audience-card fade-up-element stagger-1">
+                    <h3>1. Прибыльная ниша</h3>
+                    <p>Это одна из самых маржинальных сфер в бьюти-индустрии. Высокая стоимость процедур окупается доверием клиентов и заметным результатом.</p>
+                </div>
+                <div class="audience-card fade-up-element stagger-2">
+                    <h3>2. Быстрый старт</h3>
+                    <p>Обучение построено максимально эффективно — без «воды». После курса вы сможете брать клиентов сразу, отрабатывая вложения уже в первую неделю работы.</p>
+                </div>
+                <div class="audience-card fade-up-element stagger-3">
+                    <h3>3. Свобода в каждом дне</h3>
+                    <p>Никаких привязок к рабочему графику. Вы сами решаете, когда принимать клиентов: утро, вечер или выходные. Реконструкция дает вам гибкость, которую вы контролируете.</p>
+                </div>
+                <div class="audience-card fade-up-element stagger-4">
+                    <h3>4. Доход без потолка</h3>
+                    <p>Ваш заработок ограничен только вашими возможностями и желанием. Реконструкция волос — это база для роста: повышая квалификацию и расширяя линейку услуг, вы стабильно увеличиваете средний чек и количество постоянных клиентов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="program" class="program">
+        <div class="container">
+            <h2 class="section-title text-center fade-up-element">🧬 ПРОГРАММА КУРСА</h2>
+            <p class="text-center program-subtitle fade-up-element stagger-1">Выберите направление, которое подходит именно вам</p>
+            <div class="program__grid-creative">
+                <div class="program__card item-1 fade-up-element stagger-1">
+                    <span class="program__number">01</span>
+                    <h3>❄️ Холодное восстановление</h3>
+                    <p>Для тонких, ослабленных, окрашенных. Не имеет противопоказаний.</p>
+                </div>
+                <div class="program__card item-1 fade-up-element stagger-1">
+                    <span class="program__number">02</span>
+                    <h3>✨ Нанопластика</h3>
+                    <p>Выпрямление навсегда.<br>Без мифов. Только четкий протокол.</p>
+                </div>
+                <div class="program__card item-3 fade-up-element stagger-3">
+                    <span class="program__number">03</span>
+                    <h3>🔥 Горячая реконструкция</h3>
+                    <p>Кератин и ботокс. Полное погружение в процессы горячей реконструкции для создания идеального полотна.</p>
+                </div>
+                <div class="program__card item-4 fade-up-element stagger-4">
+                    <span class="program__number">04</span>
+                    <h3>🧴 Пилинг кожи головы</h3>
+                    <p>Глубокое очищение и подготовка. Важный этап для здоровья волос и кожи головы.<br>Повышаете эффективность процедур и средний чек.</p>
+                </div>
+                <div class="program__card item-5 fade-up-element stagger-5">
+                    <span class="program__number">+</span>
+                    <h3>Дополнительные материалы</h3>
+                    <p>
+                        Интервью<br>
+                        Протокол безопасности<br>
+                        Строение волоса<br>
+                        Стартовый набор мастера<br>
+                        Рекомендации проверенных составов<br>
+                        Ссылки на сайты поставщиков<br>
+                        Методички
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta has-video-bg">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="img/prem-bg-4.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <div class="container text-center">
+            <h2 class="section-title fade-up-element">Готовы стать экспертом?</h2>
+            <p class="fade-up-element stagger-1">Перейдите в наши каналы связи, чтобы получить подробную информацию и доступ к урокам!</p>
+            <div class="hero__actions cta__actions fade-up-element stagger-2">
+                <a href="https://t.me/territoryvolos" class="btn btn--primary" target="_blank">
+                    <svg class="icon"><use href="#icon-tg"></use></svg>Telegram
+                </a>
+                <a href="https://max.ru/join/MhPqv-kPqTF3zitQ_peglzhfv23O8QMD6uD534wq9Zk" class="btn btn--outline" target="_blank">
+                    <img src="img/MAX_logo.png" alt="MAX" class="icon" style="object-fit: contain;">MAX
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="lead-form">
+        <div class="container">
+            <div class="lead-form__wrapper">
+                <div class="lead-form__info fade-up-element">
+                    <h2 class="section-title">Остались вопросы?</h2>
+                    <p>Оставьте заявку, и мы свяжемся с вами для бесплатной консультации. Подберем подходящий курс и ответим на все вопросы.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Адрес:</strong>
+                            <p>Краснодар, проезд Репина 32<br>Студия «Новый уровень»</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Телефон (Звонки и MAX):</strong>
+                            <a href="tel:+79186215151">8 (918) 621-51-51</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <a href="mailto:evelina.karataeva@mail.ru">evelina.karataeva@mail.ru</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Мессенджеры и соцсети:</strong>
+                            <div class="social-links-mini">
+                                <a href="https://t.me/Lvlup5151" target="_blank" class="icon-link"><svg class="icon"><use href="#icon-tg"></use></svg>Telegram (@Lvlup5151)</a>
+                                <a href="https://max.ru/join/MhPqv-kPqTF3zitQ_peglzhfv23O8QMD6uD534wq9Zk" target="_blank" class="icon-link"><img src="img/MAX_logo_dark.png" alt="MAX" class="icon" style="object-fit: contain;">MAX</a>
+                                <a href="https://vk.com/volosu_krasnodar" target="_blank" class="icon-link"><svg class="icon"><use href="#icon-vk"></use></svg>ВКонтакте</a>
+                                <a href="https://www.instagram.com/lvlup_shine" target="_blank" class="icon-link"><svg class="icon"><use href="#icon-inst"></use></svg>Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lead-form__inner fade-up-element stagger-2">
+                    <form id="contactForm" class="form" action="form.php" method="POST">
+                        <div class="form__group">
+                            <input type="text" id="name" name="name" required placeholder="Ваше Имя и Фамилия">
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" id="phone" name="phone" required placeholder="8 (918) 621-51-51">
+                        </div>
+                        <div class="form__group">
+                            <input type="email" id="email" name="email" required placeholder="Ваш Email">
+                        </div>
+                        <button type="submit" class="btn btn--submit">Оставить заявку</button>
+                        <p class="form__policy">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" target="_blank" style="color: var(--accent-color); text-decoration: underline;">политикой конфиденциальности</a>.</p>
+                        <div id="formMessage" class="form__message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__logo">Новый <span>Уровень</span></div>
+            <div class="footer__copyright">
+                © 2024 Авторский курс по реконструкции волос. Все права защищены.<br>
+                Образовательная лицензия №Л035-0129-77/0124240
+            </div>
+            <div class="footer__socials">
+                <a href="https://t.me/territoryvolos" class="footer__social-link icon-link" target="_blank">
+                    <svg class="icon"><use href="#icon-tg"></use></svg>Telegram
+                </a>
+                <a href="https://max.ru/join/MhPqv-kPqTF3zitQ_peglzhfv23O8QMD6uD534wq9Zk" class="footer__social-link icon-link" target="_blank">
+                    <img src="img/MAX_logo.png" alt="MAX" class="icon" style="object-fit: contain;">MAX
+                </a>
+                <a href="https://vk.com/volosu_krasnodar" class="footer__social-link icon-link" target="_blank">
+                    <svg class="icon"><use href="#icon-vk"></use></svg>ВКонтакте
+                </a>
+                <a href="https://www.instagram.com/lvlup_shine" class="footer__social-link icon-link" target="_blank">
+                    <svg class="icon"><use href="#icon-inst"></use></svg>Instagram
+                </a>
+                <a href="tel:+79186215151" class="footer__social-link icon-link">
+                    <svg class="icon"><use href="#icon-phone"></use></svg>8 (918) 621-51-51
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
